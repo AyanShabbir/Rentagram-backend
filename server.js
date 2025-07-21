@@ -38,5 +38,5 @@ app.use("/api/bookings", require("./routes/bookingRoutes"));
 app.use("/api/stripe", require("./routes/stripeRoutes"));
 app.use('/api/users', userRoutes);
 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
